@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
 import { Wrapper, CustomInput, CustomButton } from './style';
 import PropTypes from 'prop-types';
+import { max } from 'lodash';
 
 const CustomInputNumber = props => {
   const [inputValue, setInputValue] = useState(0);
@@ -132,11 +133,20 @@ CustomInputNumber.propTypes = {
   min: PropTypes.number.isRequired,
   step: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
-  value: PropTypes.number.isRequired,
-  disabled: PropTypes.bool.isRequired,
-  onChange: PropTypes.func.isRequired,
-  onBlur: PropTypes.func.isRequired,
-  assignableGuest: PropTypes.number.isRequired
+  value: PropTypes.number,
+  disabled: PropTypes.bool,
+  onChange: PropTypes.func,
+  onBlur: PropTypes.func,
+  assignableGuest: PropTypes.number
+};
+
+CustomInputNumber.defaultProps = {
+  step: 1,
+  value: 0,
+  assignableGuest: 9999,
+  disabled: false,
+  onChange: () => {},
+  onBlur: () => {}
 };
 
 export default CustomInputNumber;
