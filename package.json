@@ -1,0 +1,42 @@
+{
+  "name": "pretest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/close09452/PreTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/close09452/PreTest/issues"
+  },
+  "homepage": "https://github.com/close09452/PreTest#readme",
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "eslint": "^8.23.0",
+    "eslint-plugin-react": "^7.31.8",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.0"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "styled-components": "^5.3.5"
+  },
+  "description": ""
+}
